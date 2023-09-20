@@ -1,0 +1,141 @@
+.content {
+  background-color: var(--color-ligth-white);
+  padding-bottom: 41px;
+  &__info-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+  &__rating {
+    font-family: GothamPro, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  &__link {
+    color: var(--color-green);
+    font-family: GothamPro, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  &__title {
+    color: var(--color-black-600);
+    font-family: GothamPro-Bold, sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    margin: 20px 0;
+  }
+  &__slider {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__slider-img {
+    width: 358px;
+    height: 232px;
+    border-radius: 20px;
+  }
+  &__slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    &__img {
+      width: 80px;
+      height: 66px;
+      border-radius: 10px;
+      &.active {
+        opacity: 0.4;
+      }
+    }
+  }
+  &__product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  &__delivery-product {
+    color: var(--color-black-700);
+    font-family: GothamPro, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    .bold-text {
+      color: var(--color-black-700);
+      font-family: GothamPro-Bold, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+    }
+  }
+  &__product-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    .star {
+      cursor: pointer;
+    }
+    .estimation {
+      font-family: GothamPro, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      margin-left: 6px;
+    }
+  }
+  .products-form {
+    margin-top: 20px;
+    &__container-select {
+      display: flex;
+      gap: 16px;
+    }
+    &__products-select {
+      position: relative;
+      margin-bottom: 20px;
+      .arrow-open {
+        position: absolute;
+        content: '';
+        top: 50%;
+        right: 9px;
+        width: 19px;
+        height: 9px;
+      }
+    }
+    &__label-select {
+      display: block;
+      text-align: center;
+      width: 100%;
+      color: var(--color-black-600);
+      font-family: GothamPro, sans-serif;
+      font-size: 10px;
+      font-weight: 400;
+    }
+    &__items-select {
+      cursor: pointer;
+      appearance: none;
+      width: 170px;
+      height: 50px;
+      color: var(--color-black-600);
+      text-align: center;
+      font-family: GothamPro-Bold, sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      text-transform: uppercase;
+      background-color: var(--color-white);
+      border-radius: 10px;
+    }
+    &__form-btn {
+      width: 100%;
+      .btn {
+        cursor: pointer;
+        width: 100%;
+        padding: 11px 20px;
+        border-radius: 15px;
+        background-color: var(--color-green);
+        color: var(--color-white);
+        text-align: center;
+        font-family: GothamPro, sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
