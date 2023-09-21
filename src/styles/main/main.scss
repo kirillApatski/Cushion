@@ -36,6 +36,8 @@
     border-radius: 20px;
   }
   &__slider-buttons {
+    max-width: 358px;
+
     display: flex;
     justify-content: space-between;
     gap: 12px;
@@ -89,13 +91,18 @@
     &__products-select {
       position: relative;
       margin-bottom: 20px;
-      .arrow-open {
+      .select-color-arrow, .select-size-arrow {
         position: absolute;
         content: '';
         top: 50%;
         right: 9px;
         width: 19px;
         height: 9px;
+        &.active {
+          display: block;
+          transform: rotate(180deg);
+
+        }
       }
     }
     &__label-select {
@@ -124,6 +131,8 @@
     &__form-btn {
       width: 100%;
       .btn {
+        display: block;
+        text-decoration: none;
         cursor: pointer;
         width: 100%;
         padding: 11px 20px;
